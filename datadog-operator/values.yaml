@@ -1,0 +1,11 @@
+datadog-agent:
+  enabled: true
+  clusterAgent:
+    enabled: true
+    metricsProvider:
+      enabled: false
+    # Secret was generated using the following command:
+    #
+    #   kubectl -n datadog create secret generic datadog-cluster-agent \
+    #     --from-literal=token=$( openssl rand -hex 30 )
+    tokenExistingSecret: datadog-cluster-agent

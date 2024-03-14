@@ -1,0 +1,12 @@
+apiVersion: v2
+name: datadog-agent
+description: ""
+type: application
+version: 0.0.1
+appVersion: "0.1.0"
+dependencies:
+  - name: datadog
+    repository: https://helm.datadoghq.com
+    version: 3.24.0
+    alias: datadog-agent
+    condition: datadog-agent.enabled

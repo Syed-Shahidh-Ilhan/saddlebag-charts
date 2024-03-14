@@ -1,0 +1,12 @@
+apiVersion: v2
+name: datadog-operator
+description: datadog-operator manages the datadog-agent in cluster
+type: application
+version: 0.1.0
+appVersion: ""
+
+dependencies:
+- alias: datadog-operator
+  name: datadog-operator
+  version: 1.5.1
+  repository: https://helm.datadoghq.com

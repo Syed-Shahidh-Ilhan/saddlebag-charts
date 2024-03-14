@@ -8,4 +8,3 @@ datadog-agent:
     tokenExistingSecret: datadog-secret
   datadog:
     apiKeyExistingSecret: datadog-secret
-    appKeyExistingSecret: datadog-secret

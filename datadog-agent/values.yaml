@@ -1,0 +1,11 @@
+datadog-agent:
+  enabled: true
+  clusterAgent:
+    enabled: true
+    metricsProvider:
+      enabled: false
+    # kubectl create secret generic datadog-secret --from-literal api-key=<DATADOG_API_KEY>
+    tokenExistingSecret: datadog-secret
+  datadog:
+    apiKeyExistingSecret: datadog-secret
+    appKeyExistingSecret: datadog-secret
